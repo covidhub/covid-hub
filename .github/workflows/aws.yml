@@ -1,5 +1,7 @@
 name: Deploy to Amazon ECS
 
+on: [push]
+
 jobs:
   deploy:
     name: Deploy
