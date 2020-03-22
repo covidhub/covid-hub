@@ -40,3 +40,10 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jib {
+    to {
+        image = "${System.getenv('ECR_REGISTRY')}/${System.getenv('ECR_REPOSITORY')}/covid-hub-server"
+        credHelper = 'ecr-login'
+    }
+}
