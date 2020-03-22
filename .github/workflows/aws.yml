@@ -30,4 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
         run: ./gradlew jib
