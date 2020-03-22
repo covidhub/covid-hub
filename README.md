@@ -19,6 +19,6 @@ $ ./gradlew build
 Run with
 
 ```
-$ ./gradlew run
+$ ./gradlew bootRun
 ```
 
