@@ -4,5 +4,21 @@
 
 - Profiles
 - Contact tracking
-- Close contact (NYI)
+- Close contact tracking (NYI)
 - Authentication (NYI)
+- Risk assessment (NYI)
+
+## Build instructions
+
+Build with
+
+```
+$ ./gradlew build
+```
+
+Run with
+
+```
+$ ./gradlew run
+```
+
